@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Dairy Round app icon.
+
+  The name is the motif: a grazing round, drawn as a ring of breaks with one
+  lit. That is literally what the app records — the rotation, and where the
+  herd is in it today.
+
+  Deliberately full-bleed and square with no rounded corners of its own: iOS
+  applies its own mask, and an icon that rounds itself ends up with a visible
+  double border. No transparency either, which the App Store rejects.
+
+  The ground is the app's navy so the icon and the app read as one thing; the
+  lit break is pasture green, the only other colour in the app's palette.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Dairy Round">
+  <title>Dairy Round</title>
+
+  <rect width="1024" height="1024" fill="#1E3A8A"/>
+
+  <!--
+    Eight breaks, as a dashed ring. A stroked circle with a dash pattern draws
+    the segments and the gaps between them in one path, so the spacing stays
+    even at any size — cleaner than twelve hand-placed arcs.
+    Eight rather than twelve: a fine-toothed ring on a dark ground reads as a
+    loading spinner at home-screen size. Circumference ≈ 1822; 159 on, 68 off.
+  -->
+  <circle
+    cx="512" cy="512" r="290"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="132"
+    stroke-dasharray="159.4 68.3"
+    stroke-linecap="butt"
+    opacity="0.92"
+    transform="rotate(-90 512 512)"
+  />
+
+  <!--
+    Today's break. Same geometry, one segment long, rotated to sit at the top:
+    the eye lands there first and the icon reads as "here, now".
+  -->
+  <circle
+    cx="512" cy="512" r="290"
+    fill="none"
+    stroke="#4ADE80"
+    stroke-width="132"
+    stroke-dasharray="159.4 1662.7"
+    stroke-linecap="butt"
+    transform="rotate(-90 512 512)"
+  />
+</svg>
