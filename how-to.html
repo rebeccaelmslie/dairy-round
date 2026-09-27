@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dairy Round — How to use it</title>
+<style>
+  * { box-sizing:border-box; }
+  body { background:#f6f7f9; color:#141a26; margin:0; padding:0 20px 72px;
+         font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; }
+  .wrap { max-width:40rem; margin:0 auto; }
+  header { padding:52px 0 20px; border-bottom:3px solid #1e3a8a; }
+  h1 { font-size:32px; margin:0 0 8px; letter-spacing:-.015em; }
+  .sub { color:#4a5567; margin:0; }
+  h2 { font-size:15px; letter-spacing:.09em; text-transform:uppercase; color:#1e3a8a;
+       margin:36px 0 8px; }
+  h3 { font-size:18px; margin:26px 0 6px; }
+  p { margin:0 0 14px; }
+  ol,ul { margin:0 0 14px; padding-left:1.2em; }
+  li { margin-bottom:7px; }
+  .card { background:#fff; border:1px solid #dfe3ea; border-radius:8px; padding:16px 18px;
+          margin:0 0 14px; }
+  .warn { background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706;
+          border-radius:0 8px 8px 0; padding:16px 18px; margin:22px 0; }
+  .step { display:flex; gap:14px; margin:0 0 20px; }
+  .num { flex:none; width:29px; height:29px; border-radius:50%; background:#1e3a8a; color:#fff;
+         font-size:15px; font-weight:700; display:flex; align-items:center; justify-content:center;
+         margin-top:2px; }
+  .step h3 { margin:0 0 4px; }
+  .step p:last-child { margin-bottom:0; }
+  table { border-collapse:collapse; width:100%; margin:0 0 14px; font-size:16px; }
+  th,td { text-align:left; padding:9px 10px; border-bottom:1px solid #dfe3ea; vertical-align:top; }
+  th { color:#1e3a8a; font-size:13px; letter-spacing:.06em; text-transform:uppercase; }
+  .swatch { display:inline-block; width:15px; height:15px; border-radius:3px; margin-right:7px;
+            vertical-align:-2px; }
+  .s-edit { background:#fff; border:2px solid #1e3a8a; }
+  .s-calc { background:#e9edf3; border:1px dashed #98a2b3; }
+  .s-read { background:transparent; border:1px solid transparent; box-shadow:inset 0 0 0 1px #f6f7f9; }
+  footer { margin-top:44px; padding-top:16px; border-top:1px solid #dfe3ea;
+           color:#798395; font-size:14px; }
+  a { color:#1e3a8a; }
+  code { background:#eceff4; padding:1px 5px; border-radius:4px; font-size:15px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>How to use it</h1>
+    <p class="sub">Dairy Round — a walk through your first visit</p>
+  </header>
+
+  <h2>The idea</h2>
+  <p>
+    Everything you record at one farm on one day belongs to a single <strong>visit</strong>. The
+    farm walk, the condition scoring, the herd figures, the supplements and the feed on hand all
+    attach to it. That is what lets the app put this month beside last month, or beside the same
+    week last year, without you filing anything.
+  </p>
+  <p>
+    You do not create a visit. Start recording and one is opened for today; carry on tomorrow and a
+    new one begins.
+  </p>
+
+  <h2>Setting up a farm</h2>
+  <p>You do this once per client. After that, a visit is just the recording.</p>
+
+  <div class="step">
+    <div class="num">1</div>
+    <div>
+      <h3>Add the client</h3>
+      <p>Tap <strong>+</strong> on the Clients screen. A last name is all that is required — phone,
+        email and business name can wait.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num">2</div>
+    <div>
+      <h3>Add the farm and its paddocks</h3>
+      <p>Open the client and tap <strong>Farm Details</strong>. Add a block — most farms need only
+        one, but a runoff or a lease block can be added separately. Then bulk-add the paddocks.</p>
+      <p>Paddocks keep their identity, so a paddock scored low this month is the same paddock next
+        month.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num">3</div>
+    <div>
+      <h3>Add the herds</h3>
+      <p><strong>Stock Management</strong> holds the mobs — milkers, springers, young stock. Give
+        each a name and a number; both can be edited later.</p>
+    </div>
+  </div>
+
+  <h2>Recording a visit</h2>
+
+  <div class="step">
+    <div class="num">4</div>
+    <div>
+      <h3>Walk the farm</h3>
+      <p><strong>Pasture Cover</strong> takes a cover per paddock as you drive round. You can stop
+        part way and pick it up later in the day — it is the same walk until you leave it.</p>
+      <p>Covers are typed in hundreds: type <code>25</code> for 2500 KgDM/ha. Anything that looks
+        like a slip is queried before it reaches your average.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num">5</div>
+    <div>
+      <h3>Score the cows</h3>
+      <p>Open a herd and tap <strong>BCS</strong>. One tap is one cow. Keep tapping as they come
+        past; the distribution builds as you go and <strong>Undo last</strong> fixes a mis-tap.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num">6</div>
+    <div>
+      <h3>Enter the herd's figures</h3>
+      <p><strong>Feeding</strong> takes the stock number, the area allocated, the pre- and
+        post-grazing covers and the round length, plus supplements in KgDM per cow per day.</p>
+      <p>Supplements carry forward from the previous visit until you change them, so a herd on the
+        same ration needs no re-entry.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num">7</div>
+    <div>
+      <h3>Measure what is in the stack</h3>
+      <p><strong>Feed On Hand</strong> holds silage, balage and concentrate. Re-measure a stack and
+        the app reports what has been eaten since the last reading.</p>
+      <p>Bale weights are entered as <strong>KgDM per bale</strong>, not fresh weight — a
+        "180 kg bale" in conversation usually means DM. There is a DM% field if you are working
+        from a contractor's docket instead.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num">8</div>
+    <div>
+      <h3>Read it back</h3>
+      <p>A herd's summary shows this visit beside the previous one — covers, intake, condition and
+        daily surplus. <strong>Previous</strong>, <strong>Last year</strong> and
+        <strong>Pick…</strong> choose what it compares against.</p>
+      <p><strong>Visit Summary</strong> lists the visits for a client, and the share button turns
+        one into a single-page PDF for your report or for the farmer.</p>
+    </div>
+  </div>
+
+  <h2>Reading the screens</h2>
+  <p>Fields tell you what they are by how they look:</p>
+  <table>
+    <tr><th>Looks like</th><th>Means</th></tr>
+    <tr>
+      <td><span class="swatch s-edit"></span>White box, navy border</td>
+      <td>You can type in it. A dash means it is empty, not locked.</td>
+    </tr>
+    <tr>
+      <td><span class="swatch s-calc"></span>Grey box, dashed border</td>
+      <td>The app works this one out from the others.</td>
+    </tr>
+    <tr>
+      <td><span class="swatch s-read"></span>No box at all</td>
+      <td>A figure carried in from elsewhere — change it where it was entered.</td>
+    </tr>
+  </table>
+  <p>
+    Where a figure cannot be worked out yet, the app names what is missing rather than showing a
+    dash — for example <em>Needs Allocated area</em>, or <em>Needs 3 figures</em> when several are
+    absent. Enter them on the Feeding screen for that herd and the figure appears.
+  </p>
+
+  <h2>Backing up</h2>
+  <p>
+    Your records live on the phone and nowhere else. No server holds a copy, which is why the app
+    keeps working in a valley — and why a backup is the only way to survive a lost phone.
+  </p>
+  <div class="card">
+    <p style="margin:0 0 10px"><strong>Once a round, at the kitchen table:</strong></p>
+    <ol style="margin:0">
+      <li>Tap the backup button at the bottom of the Clients screen.</li>
+      <li><strong>Back up now</strong> writes a copy onto the phone.</li>
+      <li><strong>Send backup</strong> puts a copy somewhere else — iCloud Drive, or emailed to
+        yourself. This is the step that actually protects you.</li>
+    </ol>
+  </div>
+  <p>
+    Each backup writes two files: a <code>.json</code> that restores everything, and a
+    <code>.csv</code> you can open in a spreadsheet.
+  </p>
+  <p>
+    On a new phone, install the app, tap the backup button and choose
+    <strong>Restore from a file</strong>. You are shown what the file holds before anything is
+    changed.
+  </p>
+
+  <div class="warn">
+    <strong>A backup kept only on the phone will not survive losing the phone.</strong>
+    Sending a copy off the device is the part that matters, and it is the step people skip.
+  </div>
+
+  <h2>Still stuck?</h2>
+  <div class="card">
+    <p style="margin:0">
+      Email <a href="mailto:rebeccaelmslie@gmail.com">rebeccaelmslie@gmail.com</a>. Saying which
+      screen you were on and what you expected to happen gets you a faster answer. There is more on
+      the <a href="support.html">support page</a>.
+    </p>
+  </div>
+
+  <footer>Last updated 28 September 2026 · <a href="index.html">Dairy Round</a></footer>
+</div>
+</body>
+</html>
